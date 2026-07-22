@@ -82,3 +82,24 @@ cards.forEach(card => {
 
 
 });
+const welcomeScreen = document.getElementById("welcomeScreen");
+
+const enterBtn = document.getElementById("enterBtn");
+
+const bgMusic = document.getElementById("bgMusic");
+
+
+enterBtn.addEventListener("click", () => {
+
+
+    // تشغيل الأغنية
+
+    bgMusic.play();
+
+
+    // إخفاء شاشة الترحيب
+
+    welcomeScreen.classList.add("hide");
+
+
+});
